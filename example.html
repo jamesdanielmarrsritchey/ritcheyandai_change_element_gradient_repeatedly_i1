@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<div id='output'>Click here to change the gradient of this elements background repeatedly.</div>
+<script src="function.js"></script>
+<script>
+document.querySelector("#output").addEventListener("click", function() {
+    const element = document.querySelector("#output");
+    if (element) {
+        changeBackgroundGradientLoop('output', 300, 360, 5);
+    }
+});
+</script>
+</body>
+</html>
